@@ -25,6 +25,8 @@
       src="https://kit.fontawesome.com/6166fad830.js"
       crossorigin="anonymous"
     ></script>
+    <!-- Swiper -->
+    <script src="./script/swiper.js"></script>
     <!-- CSS -->
     <link rel="stylesheet" href="css/style.css" />
     <!-- Javascript -->
@@ -101,7 +103,24 @@
     <!-- Main -->
     <main>
       <!-- Home Slide -->
-      <section class="slide"></section>
+      <section class="slide">
+        <div class="swiper-container main_slide">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="./img/banner02.jpg" alt="메인배너1" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./img/banner03.jpg" alt="메인배너2" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./img/banner01.jpg" alt="메인배너3" />
+            </div>
+          </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </section>
       <!-- Donut -->
       <section class="donut"></section>
       <!-- Menu -->

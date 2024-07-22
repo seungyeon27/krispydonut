@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- SEO -->
-    <title>크리스피크림도넛 웹 사이트</title>
+    <title>크리스피크림도넛</title>
     <meta name="description" content="크리스피크림도넛 웹 사이트" />
     <meta name="author" content="Seungyeon" />
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
@@ -35,71 +35,133 @@
   </head>
   <body>
     <!-- Header -->
-    <header>
-      <a href="#">
-        <img src="images/logo.png" alt="크리스피크림도넛 로고" />
-      </a>
+    <header class="header">
+      <div class="header__top">
+        <h1>
+          <a href="index.html" title="메인페이지로 바로가기">
+            <img src="images/logo.png" alt="상단로고"
+          /></a>
+        </h1>
 
-      <nav>
-        <ul>
-          <li><a href="login.html">Login</a></li>
-          <li><a href="join.html">Join</a></li>
-          <li><a href="management.html">윤리경영</a></li>
-          <li><a href="sitemap.html">사이트맵</a></li>
-          <li><a href="englishindex.html">English</a></li>
-        </ul>
-      </nav>
+        <nav class="header__address">
+          <ul>
+            <li>
+              <a href="login.html">LOGIN</a>
+            </li>
+            <li>
+              <a href="join.html">JOIN</a>
+            </li>
+            <li>
+              <a href="management.html">윤리경영</a>
+            </li>
+            <li>
+              <a href="sitemap.html">사이트맵</a>
+            </li>
+            <li>
+              <a href="englishindex.html">English</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
 
-      <nav>
-        <ul>
-          <li>
-            <a href="menu.html">Menu</a>
-            <ul>
-              <li><a href="firstmenu.html">인기메뉴</a></li>
-              <li><a href="monthmenu.html">이달의 메뉴</a></li>
-              <li><a href="donut.html">도넛</a></li>
-              <li><a href="coffee.html">커피/음료</a></li>
-              <li><a href="ice.html">아이스크림/프로즌</a></li>
-            </ul>
-          </li>
-          <li>
-            <a href="store.html">Store</a>
-            <ul>
-              <li><a href="store.html">매장찾기</a></li>
-              <li><a href="order.html">주문하기</a></li>
-            </ul>
-          </li>
-          <li>
-            <a href="event.html">Event</a>
-            <ul>
-              <li><a href="eventing.html">진행이벤트</a></li>
-              <li><a href="evented.html">종료이벤트</a></li>
-              <li><a href="eventwinner.html">당첨자발표</a></li>
-            </ul>
-          </li>
-          <li>
-            <a href="brand.html">Brand</a>
-            <ul>
-              <li><a href="media.html">도넛극장</a></li>
-              <li><a href="brandstory.html">브랜드스토리</a></li>
-              <li><a href="notice.html">공지사항</a></li>
-            </ul>
-          </li>
-          <li>
-            <input type="text" id="search__bar" />
-            <label for="search__bar">
-              <i class="fa-solid fa-magnifying-glass"></i>
-            </label>
-          </li>
-          <li>
-            <input type="text" id="shopping__bar" />
-            <label for="shopping__bar">
-              <i class="fa-solid fa-cart-shopping"></i>
-            </label>
-          </li>
-        </ul>
-      </nav>
+      <input type="checkbox" id="toggle" />
+      <div class="header__bottom">
+        <label for="toggle" class="fas fa-bars"
+          ><span class="bar">토글</span></label
+        >
+        <nav class="header__gnb">
+          <ul>
+            <li>
+              <a href="menu.html" title="메뉴">Menu</a>
+              <ul class="header__sub">
+                <li><a href="firstmenu.html" title="인기메뉴">인기메뉴</a></li>
+                <li>
+                  <a href="monthmenu.html" title="이달의 메뉴">이달의 메뉴</a>
+                </li>
+                <li><a href="donut.html" title="도넛">도넛</a></li>
+                <li><a href="coffee.html" title="커피/음료">커피/음료</a></li>
+                <li>
+                  <a href="ice.html" title="아이스크림/프로즌"
+                    >아이스크림/프로즌</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="store.html" title="상점">Store</a>
+              <ul class="header__sub">
+                <li><a href="store.html" title="매장찾기">매장찾기</a></li>
+                <li><a href="order.html" title="주문하기">주문하기</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="event.html" title="이벤트">Event</a>
+              <ul class="header__sub">
+                <li>
+                  <a href="eventing.html" title="진행이벤트">진행이벤트</a>
+                </li>
+                <li>
+                  <a href="eventend.html" title="종료이벤트">종료이벤트</a>
+                </li>
+                <li>
+                  <a href="eventwinner.html" title="당첨자발표">당첨자발표</a>
+                </li>
+                <li>
+                  <a href="eventservice.html" title="제휴 서비스"
+                    >제휴 서비스</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="brand.html" title="브랜드">Brand</a>
+              <ul class="header__sub">
+                <li><a href="movie.html" title="도넛극장">도넛극장</a></li>
+                <li>
+                  <a href="brandstory.html" title="브랜드스토리"
+                    >브랜드스토리</a
+                  >
+                </li>
+                <li>
+                  <a href="brandvideo.html" title="브랜드영상">브랜드영상</a>
+                </li>
+                <li>
+                  <a href="giftcard.html" title="상품권구입안내"
+                    >상품권구입안내</a
+                  >
+                </li>
+                <li><a href="notice.html" title="공지사항">공지사항</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="survey.html" title="설문조사">Survey</a>
+              <ul class="header__sub">
+                <li><a href="survey.html" title="설문조사">설문조사</a></li>
+                <li>
+                  <a href="surveystore.html" title="설문조사 운영점"
+                    >설문조사 운영점</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="header__gnb__searchbar">
+              <input type="text" id="text" />
+              <label for="text"
+                ><span class="search">검색창</span>
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </label>
+            </li>
+            <li class="header__gnb__shopping">
+              <label for="text"
+                ><span class="basket">장바구니</span>
+                <i class="fa-solid fa-cart-shopping"></i>
+              </label>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </header>
+
     <!-- Main -->
     <main>
       <!-- Home Slide -->

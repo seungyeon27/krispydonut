@@ -1,0 +1,177 @@
+/* Global */
+:root {
+  /* App Colors */
+  --color-primary: #f1f0ec;
+  --color-accent: #00704a;
+  --color-accent-varient: #c91347;
+  --color-footer: #333333;
+  --color-footer-varient: #eeeeee;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Jua", sans-serif;
+}
+
+h1,
+h2,
+h3,
+p,
+ul {
+  margin: 0;
+}
+
+ul {
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+}
+
+button {
+  background-color: transparent;
+  border: 0;
+  outline: 0;
+}
+
+button:focus {
+  outline: 1px solid transparent;
+}
+
+/* Header */
+#toggle,
+label[for="toggle"] {
+  display: none;
+}
+
+label[for="toggle"] {
+  font-size: 30px;
+  padding: 10px;
+  color: #00704a;
+  position: absolute;
+  left: 10px;
+  top: 4px;
+}
+
+#toggle:checked + .header__bottom {
+  height: 320px;
+}
+
+/* 헤더 영역 시작   */
+header {
+  width: 100%;
+}
+
+.header__top {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+.header__top h1 {
+  width: 130px;
+}
+
+.header__top img {
+  width: 100%;
+}
+
+.header__address > ul {
+  display: flex;
+  justify-content: flex-end;
+  gap: 15px;
+}
+
+.header__address > ul > li > a {
+  font-family: sans-serif;
+}
+
+.header__bottom {
+  width: 100%;
+  height: 50px;
+  background-color: #00704a;
+  overflow: hidden;
+  z-index: 100000000;
+  position: absolute;
+}
+
+.header__bottom:hover {
+  height: 320px;
+  transition: 0.5s;
+}
+
+.header__gnb {
+  width: 100%;
+  height: 50px;
+  padding-left: 1rem;
+  background-color: #fff;
+}
+
+.header__gnb > ul {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.header__gnb > ul > li {
+  line-height: 48px;
+}
+
+.header__gnb > ul > li > a {
+  font-size: 1.2rem;
+  padding: 0 2rem;
+}
+
+.fa-magnifying-glass {
+  color: #00704a;
+  font-size: 1rem;
+}
+
+.header__gnb__searchbar {
+  height: 40px;
+  padding-right: 1rem;
+  border-bottom: 1px solid #00704a;
+  background-color: #fff;
+}
+
+input {
+  padding: 0.3rem 0;
+  border: none;
+}
+
+.fa-cart-shopping {
+  color: #00704a;
+  font-size: 1rem;
+}
+
+.search,
+.basket {
+  display: none;
+}
+
+.header__sub {
+  text-align: center;
+}
+
+.header__sub a {
+  font-size: 1rem;
+  letter-spacing: 0.1rem;
+  color: #fff;
+}
+
+.header__sub a:hover {
+  text-decoration: underline;
+}
+
+/* Main */
+main {
+  clear: both;
+  overflow: hidden;
+  width: 100%;
+}

@@ -25,13 +25,15 @@
       src="https://kit.fontawesome.com/6166fad830.js"
       crossorigin="anonymous"
     ></script>
-    <!-- Swiper -->
-    <script src="./script/swiper.js"></script>
     <!-- CSS -->
     <link rel="stylesheet" href="css/style.css" />
+    <!-- Swiper slide 서식 -->
+    <link href="css/swiper.css" rel="stylesheet" type="text/css" />
     <!-- Javascript -->
     <script src="src/main.js" defer></script>
-    <!-- jQuery -->
+    <!-- Swiper slide script -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <!-- <script src="src/swiper.js"></script> -->
   </head>
   <body>
     <!-- Header -->
@@ -166,25 +168,16 @@
     <main>
       <!-- Home Slide -->
       <section class="slide">
-        <div class="swiper-container main_slide">
+        <div class="swiper mySwiper home__slide">
           <div class="swiper-wrapper">
             <div class="swiper-slide">
-              <img
-                src="images/banner02.jpg"
-                alt="매일따듯한도넛홍보 배너 이미지"
-              />
+              <img src="images/banner01.jpg" />
             </div>
             <div class="swiper-slide">
-              <img
-                src="images/banner03.jpg"
-                alt="크리스마스도넛홍보 배너 이미지"
-              />
+              <img src="images/banner02.jpg" />
             </div>
             <div class="swiper-slide">
-              <img
-                src="images/banner01.jpg"
-                alt="원플러스원박스도넛 배너 이미지"
-              />
+              <img src="images/banner03.jpg" />
             </div>
           </div>
           <div class="swiper-button-next"></div>
@@ -395,5 +388,24 @@
         </li>
       </ul>
     </footer>
+
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        spaceBetween: 30,
+        centeredSlides: true,
+        autoplay: {
+          delay: 2500,
+          disableOnInteraction: false,
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
   </body>
 </html>

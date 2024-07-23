@@ -37,7 +37,7 @@
   </head>
   <body>
     <!-- Header -->
-    <header class="header">
+    <header id="header">
       <div class="header__top">
         <h1>
           <a href="index.html" title="메인페이지로 바로가기">
@@ -167,8 +167,8 @@
     <!-- Main -->
     <main>
       <!-- Home Slide -->
-      <section class="slide">
-        <div class="swiper mySwiper home__slide">
+      <section id="slide">
+        <div class="swiper mySwiper first-swiper">
           <div class="swiper-wrapper">
             <div class="swiper-slide">
               <img src="images/banner01.jpg" />
@@ -186,50 +186,61 @@
         </div>
       </section>
       <!-- Donut -->
-      <section class="donut">
-        <div class="swiper">
+      <section id="donut" class="section">
+        <h2 class="title">DONUT</h2>
+        <div #swiperRef="" class="swiper mySwiper second-swiper">
           <div class="swiper-wrapper">
             <div class="swiper-slide">
-              <img src="images/donut07.png" alt="뉴욕치즈케익 도넛 이미지" />
-              <p>뉴욕 치즈케익</p>
+              <img
+                class="donut__img__objectfit"
+                src="images/donut07.png"
+                alt="뉴욕치즈케익 도넛 이미지"
+              />
+              <p class="donut__name">뉴욕 치즈케익</p>
             </div>
             <div class="swiper-slide">
               <img
                 src="images/donut09.png"
                 alt="딸기우유크림듬뿍 도넛 이미지"
               />
-              <p>딸기 우유크림 듬뿍 도넛</p>
+              <p class="donut__name">딸기 우유크림 듬뿍</p>
             </div>
             <div class="swiper-slide">
               <img src="images/donut10.png" alt="로투스비스코프 도넛 이미지" />
-              <p>로투스 비스코프 도넛</p>
-            </div>
-            <div class="swiper-slide">
-              <img src="images/donut01.png" alt="카라멜아이스드 도넛 이미지" />
-              <p>카라멜 아이스드</p>
+              <p class="donut__name">로투스비스코프</p>
             </div>
             <div class="swiper-slide">
               <img
-                src="images/donut05.png"
-                alt="글레이즈드초콜렛케익 도넛 이미지"
+                class="donut__img__objectfit"
+                src="images/donut01.png"
+                alt="카라멜아이스드 도넛 이미지"
               />
-              <p>글레이즈드 초콜릿 케익</p>
+              <p class="donut__name">카라멜아이스드</p>
             </div>
             <div class="swiper-slide">
               <img
-                src="./img/donut04.png"
+                class="donut__img__objectfit"
+                src="images/donut05.png"
+                alt="글레이즈드초콜릿케익 도넛 이미지"
+              />
+              <p class="donut__name">글레이즈드 초콜릿 케익</p>
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="images/donut04.png"
                 alt="오리지널우유크림필드 도넛 이미지"
               />
-              <p>오리지널 우유크림 필드</p>
+              <p class="donut__name">오리지널 우유크림 필드</p>
             </div>
           </div>
           <div class="swiper-button-next"></div>
           <div class="swiper-button-prev"></div>
+          <div class="swiper-pagination"></div>
         </div>
-        <button>더보기</button>
+        <button class="krispy__btn">더보기</button>
       </section>
       <!-- Menu -->
-      <section class="menu">
+      <section id="menu">
         <div>
           <a href="firstmenu.html">
             <p>인기메뉴</p>
@@ -270,7 +281,7 @@
         </div>
       </section>
       <!-- New -->
-      <section class="new">
+      <section id="new">
         <ul>
           <li>
             <img src="images/new01.jpg" alt="스노우맨 도넛 이미지" />
@@ -298,7 +309,7 @@
         <button>더보기</button>
       </section>
       <!-- Search -->
-      <section class="search">
+      <section id="search">
         <ul>
           <li>
             <img src="images/icon01.png" alt="주문하기 아이콘" />
@@ -319,7 +330,7 @@
         </ul>
       </section>
       <!-- Event -->
-      <section calss="event">
+      <section id="event">
         <ul>
           <li>
             <img src="images/event01.jpg" alt="오리지날프레시드랍 이벤트" />
@@ -357,7 +368,7 @@
       </aside>
     </main>
     <!-- Footer -->
-    <footer>
+    <footer id="footer">
       <address>
         <div>
           <p>대표: ooo&#x2502;</p>
@@ -390,7 +401,7 @@
     </footer>
 
     <script>
-      var swiper = new Swiper(".mySwiper", {
+      var swiper = new Swiper(".first-swiper", {
         spaceBetween: 30,
         centeredSlides: true,
         autoplay: {
@@ -406,6 +417,58 @@
           prevEl: ".swiper-button-prev",
         },
       });
+    </script>
+    <script>
+      var swiper = new Swiper(".second-swiper", {
+        slidesPerView: 3,
+        centeredSlides: true,
+        spaceBetween: 30,
+        pagination: {
+          el: ".swiper-pagination",
+          type: "fraction",
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+
+      var appendNumber = 6;
+      var prependNumber = 1;
+      document
+        .querySelector(".prepend-2-slides")
+        .addEventListener("click", function (e) {
+          e.preventDefault();
+          swiper.prependSlide([
+            '<div class="swiper-slide">Slide ' + --prependNumber + "</div>",
+            '<div class="swiper-slide">Slide ' + --prependNumber + "</div>",
+          ]);
+        });
+      document
+        .querySelector(".prepend-slide")
+        .addEventListener("click", function (e) {
+          e.preventDefault();
+          swiper.prependSlide(
+            '<div class="swiper-slide">Slide ' + --prependNumber + "</div>"
+          );
+        });
+      document
+        .querySelector(".append-slide")
+        .addEventListener("click", function (e) {
+          e.preventDefault();
+          swiper.appendSlide(
+            '<div class="swiper-slide">Slide ' + ++appendNumber + "</div>"
+          );
+        });
+      document
+        .querySelector(".append-2-slides")
+        .addEventListener("click", function (e) {
+          e.preventDefault();
+          swiper.appendSlide([
+            '<div class="swiper-slide">Slide ' + ++appendNumber + "</div>",
+            '<div class="swiper-slide">Slide ' + ++appendNumber + "</div>",
+          ]);
+        });
     </script>
   </body>
 </html>

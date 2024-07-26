@@ -52,7 +52,7 @@ button:focus {
 }
 
 .title {
-  padding: 1.5rem 0;
+  padding: 1.5rem 0 3rem 0;
   position: relative;
   font-size: 2.5rem;
   text-align: center;
@@ -78,11 +78,11 @@ button:focus {
 .krispy__btn {
   display: inline-block;
   margin: 2rem;
-  padding: 0.6rem 1.7rem;
+  padding: 0.6rem 2rem;
   background-color: var(--color-accent-varient);
   color: #fff;
   font-size: 1rem;
-  border-radius: 4px;
+  border-radius: 50px;
   cursor: pointer;
   transition: 0.3s;
 }
@@ -368,4 +368,52 @@ main {
 .menu__btn:hover {
   border-bottom: 1px solid var(--color-accent-varient);
   color: var(--color-accent-varient);
+}
+
+/* NEW */
+.new__menu {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-bottom: 2rem;
+  align-items: center;
+}
+
+.new__menu:nth-child(even) .new__img {
+  order: 1;
+}
+
+.new__img {
+  width: 15rem;
+  border: 3px solid var(--color-accent);
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.new__content {
+  width: 60%;
+  padding: 1.5rem;
+  border-radius: 8px;
+  background-color: var(--color-primary);
+}
+
+.new__content__title {
+  padding-bottom: 0.1rem;
+  font-weight: bold;
+  font-size: 20px;
+  text-align: left;
+}
+
+.new__content__engtitle {
+  font-weight: bold;
+  font-size: 18px;
+  color: var(--color-accent-varient);
+  text-align: left;
+}
+
+.new__content__info {
+  padding-top: 1.5rem;
+  font-size: 17px;
+  line-height: 20px;
+  text-align: left;
 }

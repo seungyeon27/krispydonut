@@ -498,3 +498,28 @@ main {
   height: 1px;
   background-color: #fff;
 }
+
+/* Event */
+.event__content {
+  display: flex;
+  justify-content: space-around;
+  gap: 20px;
+}
+
+.event__item {
+  width: 33.3%;
+}
+
+.event__item__img {
+  width: 100%;
+}
+
+.event__description {
+  text-align: left;
+}
+
+.event__title {
+  font-size: 1.1rem;
+  color: var(--color-accent-varient);
+  line-height: 40px;
+}

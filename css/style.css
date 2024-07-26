@@ -523,3 +523,21 @@ main {
   color: var(--color-accent-varient);
   line-height: 40px;
 }
+
+/* Arrow up */
+.arrow-up {
+  position: fixed;
+  bottom: 3rem;
+  right: 3rem;
+  font-size: 3rem;
+  width: 4.5rem;
+  height: 4.5rem;
+  background-color: var(--color-accent-varient);
+  color: #fff;
+  border-radius: 100%;
+  text-align: center;
+  box-shadow: 0px 0px 5px rgb(255 255 255 / 43%),
+    0 4px 20px rgb(255 255 255 / 53%);
+  transition: opacity 300ms ease-in;
+  z-index: 1;
+}

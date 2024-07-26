@@ -527,7 +527,7 @@ main {
 /* Address */
 #address {
   padding: 1rem 4rem;
-  background-color: #eeeeee;
+  background-color: var(--color-footer-varient);
 }
 
 .tos {
@@ -558,3 +558,55 @@ main {
 }
 
 /* Footer */
+#footer {
+  background-color: var(--color-footer);
+  overflow: hidden;
+}
+
+.footer__left {
+  float: left;
+}
+
+.footer__sns {
+  display: flex;
+  gap: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.footer__sns__icon {
+  font-size: 1.8rem;
+  color: #fff;
+}
+
+.family {
+  display: none;
+}
+
+#family {
+  width: 170px;
+  height: 34px;
+  border: none;
+  border-radius: 2px;
+}
+
+.footer__right {
+  float: right;
+}
+
+.footer__address {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  text-align: left;
+}
+
+.footer__address__text {
+  color: #fff;
+  white-space: nowrap;
+}
+
+.footer__copy {
+  margin-top: 1rem;
+  text-align: left;
+  color: #fff;
+}

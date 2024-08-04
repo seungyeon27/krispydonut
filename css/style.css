@@ -662,6 +662,7 @@ main {
   .header__toggle {
     display: block;
     font-size: 1.5rem;
+    color: #000;
   }
 
   .header__bottom {
@@ -833,6 +834,10 @@ main {
     order: 0;
   }
 
+  .new__content {
+    width: 90%;
+  }
+
   .search__item.green,
   .search__item.red {
     margin-left: 0;
@@ -859,7 +864,7 @@ main {
   }
 
   .event__item {
-    width: 75%;
+    width: 90%;
   }
 
   .tos > li {
@@ -875,5 +880,9 @@ main {
     bottom: 2rem;
     padding: 0.5rem 1rem;
     font-size: 2rem;
+  }
+
+  .footer__address {
+    gap: 0.2rem;
   }
 }

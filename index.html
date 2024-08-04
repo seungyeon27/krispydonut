@@ -33,7 +33,6 @@
     <script src="src/main.js" defer></script>
     <!-- Swiper slide script -->
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-    <!-- <script src="src/swiper.js"></script> -->
   </head>
   <body>
     <!-- Header -->
@@ -44,7 +43,6 @@
             <img src="images/logo.png" alt="상단로고"
           /></a>
         </h1>
-
         <nav class="header__address">
           <ul>
             <li>
@@ -64,13 +62,11 @@
             </li>
           </ul>
         </nav>
+        <button class="header__toggle" aria-label="navigation menu toggle">
+          <i class="fa-solid fa-bars"></i>
+        </button>
       </div>
-
-      <input type="checkbox" id="toggle" />
       <div class="header__bottom">
-        <label for="toggle" class="fas fa-bars"
-          ><span class="bar">토글</span></label
-        >
         <nav class="header__gnb">
           <ul>
             <li>
@@ -146,14 +142,14 @@
                 </li>
               </ul>
             </li>
-            <li class="header__gnb__searchbar">
-              <input type="text" id="text" />
-              <label for="text"
-                ><span class="search">검색창</span>
-                <i class="fa-solid fa-magnifying-glass"></i>
-              </label>
-            </li>
-            <li class="header__gnb__shopping">
+            <li class="header__gnb__icon">
+              <div class="header__gnb__searchbar">
+                <input type="text" id="text" />
+                <label for="text"
+                  ><span class="search">검색창</span>
+                  <i class="fa-solid fa-magnifying-glass"></i>
+                </label>
+              </div>
               <label for="text"
                 ><span class="basket">장바구니</span>
                 <i class="fa-solid fa-cart-shopping"></i>
@@ -163,7 +159,6 @@
         </nav>
       </div>
     </header>
-
     <!-- Main -->
     <main>
       <!-- Home Slide -->
@@ -254,28 +249,25 @@
               <button class="menu__btn">더보기</button>
             </a>
           </div>
-
           <div class="menu__realitem">
             <a href="coffee.html">
               <p class="menu__title">커피/음료</p>
               <img
-                class="menu__itemimg2"
+                class="menu__itemimg"
                 src="images/drink02.png"
                 alt="커피/음료"
               />
               <button class="menu__btn">더보기</button>
             </a>
           </div>
-
           <div>&nbsp;</div>
           <div>&nbsp;</div>
           <div>&nbsp;</div>
-
           <div class="menu__realitem">
             <a href="monthmenu.html" title="이달의 메뉴">
               <p class="menu__title">이달의 메뉴</p>
               <img
-                class="menu__itemimg3"
+                class="menu__itemimg"
                 src="images/menu03.png"
                 alt="이달의 메뉴"
                 class="i03"
@@ -283,25 +275,21 @@
               <button class="menu__btn">더보기</button>
             </a>
           </div>
-
           <div>&nbsp;</div>
-
           <div class="menu__realitem">
             <a href="donut.html">
               <p class="menu__title">도넛</p>
-              <img class="menu__itemimg4" src="images/menu02.png" alt="도넛" />
+              <img class="menu__itemimg" src="images/menu02.png" alt="도넛" />
               <button class="menu__btn">더보기</button>
             </a>
           </div>
-
           <div>&nbsp;</div>
           <div>&nbsp;</div>
-
           <div class="menu__realitem">
             <a href="ice.html">
               <p class="menu__title">아이스크림/프로즌</p>
               <img
-                class="menu__itemimg5"
+                class="menu__itemimg"
                 src="images/ice01.png"
                 alt="아이스크림/프로즌"
               />
@@ -427,12 +415,13 @@
             </div>
           </li>
         </ul>
+        <button class="krispy__btn">더보기</button>
       </section>
       <!-- Address -->
       <section id="address">
         <ul class="tos">
-          <li class="tos__content">
-            <p>영상정보 처리기기 운영 및 관리 방침</p>
+          <li>
+            <p class="tos__content">영상정보 처리기기 운영 및 관리 방침</p>
           </li>
           <li><p class="tos__content">회사정보</p></li>
           <li><p class="tos__content">채용정보</p></li>
@@ -453,15 +442,15 @@
     <footer id="footer" class="section">
       <div class="footer__left">
         <ul class="footer__address">
-          <li><p class="footer__address__text">대표: ooo</p></li>
+          <li><p class="footer__address__text">대표 : ooo</p></li>
           <li>
-            <p class="footer__address__text">사업자등록번호: 000-00-00000</p>
+            <p class="footer__address__text">사업자등록번호 : 000-00-00000</p>
           </li>
-          <li><p class="footer__address__text">주소: ooo ooo oo</p></li>
+          <li><p class="footer__address__text">주소 : ooo ooo oo</p></li>
           <li>
-            <p class="footer__address__text">개인정보관리책임자: ooo</p>
+            <p class="footer__address__text">개인정보관리책임자 : ooo</p>
           </li>
-          <li><p class="footer__address__text">대표문의: 02-0000-0000</p></li>
+          <li><p class="footer__address__text">대표문의 : 02-0000-0000</p></li>
         </ul>
         <p class="footer__copy">
           Copyright &copy; 2013 KRISPY KREME DOUGHNUTS All Rights Reserved.

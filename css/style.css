@@ -325,7 +325,7 @@ main {
 
 .menu__realitem {
   background-color: #f1f0ec;
-  font-size: 20px;
+  font-size: 1.2rem;
   text-indent: 10px;
   padding: 20px 0;
   text-align: center;
@@ -352,7 +352,7 @@ main {
 .menu__btn {
   float: right;
   width: 90px;
-  font-size: 15px;
+  font-size: 1rem;
   border-bottom: 1px solid var(--color-accent);
   color: var(--color-accent);
   padding-bottom: 5px;
@@ -394,7 +394,7 @@ main {
 .new__content__title {
   padding-bottom: 0.1rem;
   font-weight: bold;
-  font-size: 20px;
+  font-size: 1.2rem;
   text-align: left;
 }
 
@@ -407,7 +407,7 @@ main {
 
 .new__content__info {
   padding-top: 1.5rem;
-  font-size: 17px;
+  font-size: 1rem;
   line-height: 22px;
   text-align: left;
 }
@@ -465,7 +465,7 @@ main {
 .search__title {
   display: block;
   padding-bottom: 1rem;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   text-align: left;
 }
 
@@ -473,13 +473,14 @@ main {
   display: block;
   text-align: left;
   line-height: 22px;
-  font-size: 17px;
+  font-size: 1rem;
 }
 
 .search__item__btn {
   position: relative;
   display: block;
   padding-top: 1.5rem;
+  font-size: 1rem;
   color: #fff;
   cursor: pointer;
 }
@@ -514,9 +515,13 @@ main {
 }
 
 .event__title {
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   color: var(--color-accent-varient);
   line-height: 40px;
+}
+
+.event__text {
+  font-size: 1rem;
 }
 
 /* Address */
@@ -788,6 +793,10 @@ main {
     top: 2.5rem;
   }
 
+  .krispy__btn {
+    font-size: 0.8rem;
+  }
+
   .header__address > ul {
     gap: 7px;
   }
@@ -812,6 +821,7 @@ main {
 
   .menu__btn {
     width: 52px;
+    font-size: 0.8rem;
   }
 
   .new__menu {
@@ -842,6 +852,10 @@ main {
   .search__item__icon {
     width: 150px;
     height: 150px;
+  }
+
+  .search__item__btn {
+    font-size: 0.8rem;
   }
 
   .event__item {
